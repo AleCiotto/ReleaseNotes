@@ -1,0 +1,34 @@
+{
+  "name": "releasenotes",
+  "version": "1.0.0",
+  "description": "Log Release Notes from Git Repository",
+  "main": "getReleaseNotes.js",
+  "scripts": {
+    "getReleaseNotes": "git fetch --all && node ./ReleaseNotes/getReleaseNotes.js",
+    "getJiraReleaseNotes": "git fetch --all && node ./ReleaseNotes/getReleaseNotes.js -- --jira"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleCiotto/ReleaseNotes.git"
+  },
+  "keywords": [
+    "log",
+    "release-notes",
+    "releasenotes",
+    "git",
+    "pullrequest",
+    "pull-request",
+    "html",
+    "node"
+  ],
+  "author": "Alessandro Mercurio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleCiotto/ReleaseNotes/issues"
+  },
+  "homepage": "https://github.com/AleCiotto/ReleaseNotes#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
